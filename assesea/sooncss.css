@@ -1,0 +1,46 @@
+       body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #ffffff;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.fade-in {
+    animation: fade-in 1s ease-in;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.centered-text {
+    text-align: center;
+}
+
+h1 {
+    font-size: 36px;
+    color: #000000;
+}
+
+p {
+    font-size: 18px;
+    color: #000000;
+}
+
+.copyright {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    font-size: 15px;
+}

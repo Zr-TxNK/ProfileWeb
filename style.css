@@ -1,0 +1,181 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    position: relative;
+    font-family: 'Varela Round', sans-serif;
+}
+
+/* CSS animation for fade-in effect */
+.fade-in {
+    animation: fade-in 1s ease-in;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.content {
+    text-align: center;
+    max-width: 400px;
+    padding: 10px;
+}
+
+.content p {
+    font-size: 25px;
+    margin: 3px 0;
+}
+
+.box-container {
+    display: flex;
+    justify-content: center;
+}
+
+.box {
+    width: 100px;
+    height: 50px;
+    margin: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+    color: black; /* Set the text color to black */
+    text-decoration: none; /* Remove the underline from links */
+}
+
+.box1 {
+    width: 400px;
+    height: 200px;
+    margin: 10px; /* Adjust the margin for spacing */
+    display: flex;
+    flex-direction: column; /* Change to column direction */
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+    color: black;
+    text-decoration: none;
+    border: 0px solid #000; /* Add a border for the boxes */
+}
+
+.box1 a {
+    color: black; /* Set the link text color to black */
+    text-decoration: none; /* Remove the underline */
+}
+
+.box::before {
+    content: attr(data-tooltip);
+    position: absolute;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 5px;
+    border-radius: 3px;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.3s;
+    top: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px;
+    text-align: center;
+}
+
+.box:hover::before {
+    visibility: visible;
+    opacity: 1;
+}
+
+.copyright {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    font-size: 18px;
+}
+
+.back-arrow {
+    font-size: 20px;
+    transform: rotate(180deg);
+  }
+
+.back-box {
+    color: black;
+    text-decoration: none;
+    position: absolute;
+    top: 40px;
+    left: 40px;
+}
+
+.content h6 {
+    display: inline;
+}
+.about-me {
+    margin: 20px;
+}
+  
+.box2 {
+    width: 400px;
+    height: 200px;
+    margin: 10px; /* Adjust the margin for spacing */
+    display: flex;
+    flex-direction: column; /* Change to column direction */
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+    color: black;
+    text-decoration: none;
+    border: 0px solid #000; /* Add a border for the boxes */
+}
+
+.box2 a {
+    color: black;
+    text-decoration: none;
+    border: 0px solid #000;
+}
+
+.box2 p {
+    margin: 10px;
+}
+
+.box21 {
+    width: auto;
+    height: auto;
+    display: flex; /* Change to column direction */
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+    color: black;
+    text-decoration: none;
+    border: 0px solid #000; /* Add a border for the boxes */
+}
+
+.box21 p {
+    margin-right: 20px;
+}
+
+.box22 {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    flex-direction: column; /* Change to column direction */
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+    color: black;
+    text-decoration: none;
+    border: 0px solid #000; /* Add a border for the boxes */
+}
+

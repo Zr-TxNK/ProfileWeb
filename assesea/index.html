@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #ffffff;
+    color: black; /* Set the text color to black */
+    text-decoration: none; /* Remove the underline from links */
+    font-family: 'Varela Round', sans-serif;
+}
+
+.fade-in {
+    animation: fade-in 1s ease-in;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.centered-text {
+    text-align: center;
+}
+
+h1 {
+    font-size: 36px;
+    color: #000000;
+}
+
+p {
+    font-size: 18px;
+    color: #000000;
+}
+
+.copyright {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    font-size: 15px;
+}
+
+.back-arrow {
+    font-size: 20px;
+    transform: rotate(180deg);
+}
+
+</style>
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <title>Not Now</title>
+</head>
+<body>
+    <h1 class="fade-in">
+        Coming Soon
+    </h1>
+    <a href="/index.html" class="back-box fade-in">
+        <span class="back-arrow">&#8592;</span>
+        Go back
+    </a>
+    <div class="copyright fade-in">
+        &copy; ZrHub
+    </div>
+</body>
+</html>
