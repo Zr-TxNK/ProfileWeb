@@ -7,6 +7,7 @@ body {
     margin: 0;
     position: relative;
     font-family: 'Varela Round', sans-serif;
+    border: 0px solid #000;
 }
 
 /* CSS animation for fade-in effect */
@@ -29,16 +30,19 @@ body {
     text-align: center;
     max-width: 400px;
     padding: 10px;
+    border: 0px solid #000;
 }
 
 .content p {
     font-size: 25px;
     margin: 3px 0;
+    border: 0px solid #000;
 }
 
 .box-container {
     display: flex;
     justify-content: center;
+    border: 0px solid #000000;
 }
 
 .box {
@@ -52,6 +56,7 @@ body {
     cursor: pointer;
     color: black; /* Set the text color to black */
     text-decoration: none; /* Remove the underline from links */
+    border: 0px solid #000;
 }
 
 .box1 {
@@ -179,3 +184,270 @@ body {
     border: 0px solid #000; /* Add a border for the boxes */
 }
 
+.box3 {
+    width: 1200px;
+    height: 220px;
+    margin: 5px; /* Adjust the margin for spacing */
+    display: flex; 
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+    color: black;
+    text-decoration: none;
+    border: 0px solid #000;
+}
+
+.box31 {
+    position: relative;
+    width: 500px;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    cursor: pointer;
+    margin: 40px;
+    border: 1px solid #000;
+    border-radius: 16px;
+}
+
+.image-text {
+    position: absolute;
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    text-align: center;
+}
+
+
+.box31 span {
+    text-align: center;
+    padding: 10px; 
+}
+
+.button1 {
+    width: 300px;
+    height: 100px;
+    border-radius: 18px;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.rannum {
+    flex-direction: column; /* Change to column direction */
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 60px;
+    margin-top: 60px;
+    border: 0px solid #000;
+}
+
+/* -------------------------------------- responsive --------------------------------------------------- */
+
+
+/* @media screen and (max-width: 875px) {
+    .box-container {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    body {
+        min-height: 450;
+        max-height: 1000px;
+    }
+
+    .content {
+        text-align: center;
+        max-width: 400px;
+        padding: 10px;
+        border: 0px solid #000;
+    }
+    
+    .content p {
+        font-size: 25px;
+        margin: 3px 0;
+        border: 0px solid #000;
+    }
+    
+    .box {
+        width: 100px;
+        height: 50px;
+        margin: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        cursor: pointer;
+        color: black; 
+        text-decoration: none; 
+        border: 1px solid #000;
+    }
+    
+    .box1 {
+        width: 400px;
+        height: 200px;
+        margin: 10px; 
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        cursor: pointer;
+        color: black;
+        text-decoration: none;
+        border: 0px solid #000; 
+    }
+    
+    .box1 a {
+        color: black; 
+        text-decoration: none; 
+    }
+    
+    .box::before {
+        content: attr(data-tooltip);
+        position: absolute;
+        background: rgba(0, 0, 0, 0.8);
+        color: white;
+        padding: 5px;
+        border-radius: 3px;
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility 0s, opacity 0.3s;
+        top: 70px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 150px;
+        text-align: center;
+    }
+    
+    .box:hover::before {
+        visibility: visible;
+        opacity: 1;
+    }
+    
+    .copyright {
+        position: absolute;
+        bottom: 30px;
+        right: 30px;
+        font-size: 18px;
+    }
+    
+    .back-arrow {
+        font-size: 20px;
+        transform: rotate(180deg);
+      }
+    
+    .back-box {
+        color: black;
+        text-decoration: none;
+        position: absolute;
+        top: 40px;
+        left: 40px;
+    }
+    
+    .content h6 {
+        display: inline;
+    }
+    .about-me {
+        margin: 20px;
+    }
+      
+    .box2 {
+        width: 400px;
+        height: 200px;
+        margin: 10px;
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        cursor: pointer;
+        color: black;
+        text-decoration: none;
+        border: 0px solid #000; 
+    }
+    
+    .box2 a {
+        color: black;
+        text-decoration: none;
+        border: 0px solid #000;
+    }
+    
+    .box2 p {
+        margin: 10px;
+    }
+    
+    .box21 {
+        width: auto;
+        height: auto;
+        display: flex; 
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        cursor: pointer;
+        color: black;
+        text-decoration: none;
+        border: 0px solid #000; 
+    }
+    
+    .box21 p {
+        margin-right: 20px;
+    }
+    
+    .box22 {
+        width: 40px;
+        height: 40px;
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        cursor: pointer;
+        color: black;
+        text-decoration: none;
+        border: 0px solid #000; 
+    }
+
+    .box3 {
+        width: 1200px;
+        height: 220px;
+        margin: 5px; 
+        display: flex; 
+        justify-content: center;
+        position: relative;
+        cursor: pointer;
+        color: black;
+        text-decoration: none;
+        border: 0px solid #000;
+    }
+    
+    .box31 {
+        width: 500px;
+        height: 180px;
+        display: flex; 
+        align-items: center;
+        justify-content:center;
+        color: black;
+        cursor: pointer;
+        margin: 40px;
+        border: 1px solid #000;
+        border-radius: 16px;
+    }
+    
+    .button1 {
+        width: 300px;
+        height: 100px;
+        border-radius: 18px;
+        font-family: 'Varela Round', sans-serif;
+    }
+    
+    .rannum {
+        flex-direction: column; 
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        margin-bottom: 60px;
+        margin-top: 60px;
+        border: 0px solid #000;
+    }
+}  */
