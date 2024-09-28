@@ -1,0 +1,46 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f7f7f7;
+}
+
+header {
+    background-color: #ba77e7;
+    color: white;
+    padding: 40px 0;
+}
+
+header h1 {
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+#addForm input[type="text"] {
+    border-radius: 0;
+}
+
+#addForm input[type="submit"] {
+    background-color: #343a40;
+    border: none;
+    border-radius: 0;
+}
+
+#addForm input[type="submit"]:disabled {
+    background-color: #6c757d;
+}
+
+h2,
+h3 {
+    font-weight: 600;
+}
+
+.list-group-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.list-group-item button {
+    background-color: #dc3545;
+    border: none;
+    color: white;
+}

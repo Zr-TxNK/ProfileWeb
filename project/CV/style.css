@@ -1,0 +1,212 @@
+.left .image {
+  text-align: center;
+  padding: 20px 0;
+}
+.left .image img {
+  width: 200px;
+  border-radius: 30px;
+}
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Chakra Petch", sans-serif;
+  color: white;
+  background: linear-gradient(to right, #000, #2d2a30, #000);
+}
+.left {
+  background: white;
+  width: 250px;
+  padding: 0 20px;
+}
+.left .icon {
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+}
+.left .text {
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  font-weight: 13px;
+}
+.title {
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  margin-bottom: 10px;
+  color: black;
+  position: relative;
+  text-align: right;
+  margin-bottom: 15px;
+}
+.title::before {
+  content: "";
+  position: absolute;
+  top: 35px;
+  right: 0px;
+  width: 50px;
+  height: 3px;
+  background: black;
+}
+.contact .li_warp {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 15px;
+}
+.contact .li_warp .icon {
+  width: 50px;
+  height: 50px;
+  background: black;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
+}
+.contact .li_warp .text {
+  width: calc(100% - 50px);
+  word-break: break-word;
+  color: black;
+}
+.skills ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.skills .li_wrap {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 15px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgb(231, 231, 231);
+}
+.skills .li_warp .text,
+.hobbies .li_warp .text {
+  margin-top: 5px;
+}
+.hobbies ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.hobbies .li_wrap {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 15px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgb(231, 231, 231);
+}
+.hobbies .li_wrap .text {
+  margin-top: 5px;
+}
+
+.hobbies .li_warp {
+  border: 2px solid black;
+}
+.hobbies .li_warp .icon,
+.hobbies .li_warp .text {
+  color: black;
+}
+.hobbies .li_warp:hover {
+  background: rgb(117, 117, 117);
+}
+.hobbies .li_warp:hover .icon,
+.hobbies .li_warp:hover .text {
+  color: rgb(125, 125, 125);
+}
+.right {
+  width: calc(100% - 250px);
+}
+.resume {
+  width: 800px;
+  background: rgb(0, 0, 0);
+  margin: 25px auto;
+  display: flex;
+  box-shadow: 0 0 10px black;
+  padding: 25px;
+}
+.header {
+  padding: 35px 15px;
+  height: 240px;
+}
+.header .name {
+  font-size: 52px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #ffffff;
+}
+.header .role {
+  font-weight: 300;
+  font-size: 20px;
+}
+.header .about {
+  margin-top: 20px;
+  line-height: 26px;
+}
+.right_inner {
+  padding: 30px;
+  color: rgb(117, 117, 117);
+}
+.right_inner .li_warp {
+  display: flex;
+  margin-bottom: 15px;
+}
+.right_inner.li_warp .date {
+  width: 125px;
+  color: rgb(117, 117, 117);
+}
+.invert {
+  color: rgb(255, 255, 255);
+  background-color: black;
+}
+.titleinvert {
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  margin-bottom: 10px;
+  color: rgb(255, 255, 255);
+  position: relative;
+  text-align: right;
+  margin-bottom: 15px;
+}
+.titleinvert::before {
+  content: "";
+  position: absolute;
+  top: 35px;
+  right: 0px;
+  width: 50px;
+  height: 3px;
+  background: rgb(255, 255, 255);
+}
+.right_inner .li_warp .info {
+  width: calc(100% - 125px);
+padding-left: 25px;
+position: relative;
+}
+.right_inner .li_warp .info_title {
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: rgb(255, 255, 255);
+}
+.right_inner .li_warp .info_com {
+  font-weight: 300;
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: rgb(255, 255, 255);
+}
+.right_inner .li_warp .info_cont {
+  font-weight: 300;
+  line-height: 22px;
+  color: rgb(255, 255, 255);
+}
