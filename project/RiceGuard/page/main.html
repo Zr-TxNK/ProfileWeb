@@ -5,52 +5,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>Website</title>
+    <title>Colorful Website</title>
 </head>
-<body class="bg-gray-100 font-sans">
+<body class="bg-gradient-to-br from-blue-50 to-purple-100 font-sans">
     
     <!-- Header -->
-    <header class="bg-white shadow">
+    <header class="bg-gradient-to-r from-purple-500 to-blue-500 shadow-lg">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div class="flex justify-between items-center py-6">
             <!-- Logo -->
             <div class="flex-shrink-0">
               <a href="https://phurin.win/">
-                <img class="h-8 w-auto" src="/pic/a.jpg" alt="Logo">
+                <img class="h-8 w-auto" src="/project/CV/images/c.jpg" alt="Logo">
               </a>
             </div>
             
             <!-- Navigation -->
             <nav class="hidden md:flex space-x-10">
-              <a href="/index.html" class="text-base font-medium text-gray-500 hover:text-gray-900">Home</a>
-              <a href="/page/main.html" class="text-base font-medium text-gray-500 hover:text-gray-900">About</a>
-              <a href="#" class="text-base font-medium text-gray-500 hover:text-gray-900">Services</a>
-              <a href="#" class="text-base font-medium text-gray-500 hover:text-gray-900">Contact</a>
+              <a href="/index.html" class="text-base font-medium text-white hover:text-yellow-300">Home</a>
+              <a href="/page/main.html" class="text-base font-medium text-white hover:text-yellow-300">About</a>
+              <a href="#" class="text-base font-medium text-white hover:text-yellow-300">Services</a>
+              <a href="#" class="text-base font-medium text-white hover:text-yellow-300">Contact</a>
             </nav>
           </div>
         </div>
-      </header>
+    </header>
 
     <!-- Main content -->
-    <main class="flex justify-center items-center min-h-screen">
-        <div id="check" class="bg-white shadow-lg rounded-lg p-6 text-center space-y-4">
-            <p class="text-xl font-semibold">ตรวจสอบโรคข้าวในใบข้าว</p>
+    <main class="flex flex-col justify-center items-center min-h-screen space-y-6">
+        
+        <!-- Picture above the main class -->
+        <div class="w-full max-w-lg">
+            <img src="/project/CV/images/d.jpg" alt="Main Image" class="rounded-lg shadow-lg w-full h-auto">
+        </div>
+        
+        <div id="check" class="bg-white shadow-2xl rounded-lg p-10 text-center space-y-4 transform transition-all hover:scale-105 hover:bg-gradient-to-t from-pink-50 to-purple-100">
+            <p class="text-2xl font-bold text-gray-800">ตรวจสอบโรคข้าวในใบข้าว</p>
 
             <!-- Upload Button -->
-            <label for="upload" class="cursor-pointer text-blue-600 bg-gray-200 py-2 px-4 rounded-lg inline-flex items-center space-x-2 hover:bg-gray-300">
+            <label for="upload" class="cursor-pointer text-white bg-blue-500 py-3 px-6 rounded-lg inline-flex items-center space-x-2 hover:bg-blue-600 transition duration-300 ease-in-out">
                 <i class="fas fa-plus"></i>
                 <span>เลือกภาพ</span>
             </label>
             <input type="file" id="upload" accept="image/*" class="hidden">
 
             <!-- Label Container -->
-            <p id="label-container" class="text-gray-700"></p>
+            <p id="label-container" class="text-gray-700 mt-4"></p>
         </div>
     </main>
 
     <!-- External Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
-    <script src="script.js"></script> <!-- Link to the external JavaScript file -->
+    <script src="/project/RiceGuard/script.js"></script> <!-- Link to the external JavaScript file -->
 </body>
 </html>
